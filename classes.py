@@ -7,11 +7,11 @@ class DJ:
         self.type = type
 
     # methods
-    def play(arg):
+    def play(self):
         print("Now playing Cercle set")
 
-    def describe(arg):
-        print("{} is a {} years old {} {}".format(arg.name, arg.age, arg.nationality, arg.type))
+    def describe(self):
+        print("{} is a {} years old {} {}".format(self.name, self.age, self.nationality, self.type))
 
 
 # instance
