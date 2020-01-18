@@ -1,5 +1,6 @@
 class DJ:
     def __init__(self, name, age, gender, nationality, type):
+    #instance variables
         self.name = name
         self.age = age
         self.gender = gender
@@ -8,16 +9,25 @@ class DJ:
 
     # methods
     def play(self):
-        print("Now playing Cercle set")
+        return ("Now playing Cercle set")
 
     def describe(self):
-        print("{} is a {} years old {} {}".format(self.name, self.age, self.nationality, self.type))
+        return ("{} is a {} years old {} {} nominated for {}".format(self.name, self.age, self.nationality, self.type, self.award))
 
+    # adding instance varialble
+    def setAward(self, award):
+        self.award = award
+
+    # retrieve instance variable
+    def getAward(self):
+        return self.award
 
 # instance
 DJ1 = DJ("BlackCoffee", 43, "male", "african", "club dj")
 
-print(DJ1.name)
-print(DJ1.type)
-DJ1.play()
-DJ1.describe()
+DJ1.setAward("International DJ 2019")
+print(DJ1.getAward())
+
+
+print(DJ1.play())
+print(DJ1.describe())
