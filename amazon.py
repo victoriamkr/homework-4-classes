@@ -18,6 +18,5 @@ for el in searchresults:
     print el.text
 
 
-#browser.quit()
+browser.quit()
 
-#searchresults = browser.find_elements_by_xpath('//div[@class="a-section a-spacing-none"]/h2/a/span')
